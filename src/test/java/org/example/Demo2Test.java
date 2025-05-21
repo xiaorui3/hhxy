@@ -10,8 +10,20 @@ public class Demo2Test {
     @Test
     public void logicExemple() {
         Demo2 demo2 = new Demo2();
-        int a=demo2.logicExemple(1,1);
-        int e=12;
+        int a=demo2.logicExemple(-1,-1);
+        int e=1;
+        /*if (a==e){
+            System.out.println("<OK>");
+        }else{
+            System.out.println("<NOT OK>");
+        }*/
+        Assert.assertEquals(a,e);
+    }
+    @Test
+    public void logicExemple2() {
+        Demo2 demo2 = new Demo2();
+        int a=demo2.logicExemple2(1,1);
+        int e=2;
         /*if (a==e){
             System.out.println("<OK>");
         }else{
